@@ -1,0 +1,29 @@
+
+:root{
+    --bg-color:#dbdbdb;
+    --header-bg-color: #797878;
+    --container-bg-color: #f1f2f6;
+    --text-color: #040505;
+    --aside-bg-color:#b9b9b9;
+    --main-bg-color:#c5c5c5;
+    --span-color:#af3e80;
+    --button-bg-color:#314bbe;
+    --button-click-bg-color:#252f5e;
+    --block-bg-color:#8f8f8f ;
+    --button--form-bg:linear-gradient(45deg,#e572f0, #9198e5);
+    --form-bg:#8f8f8f;
+}
+:root[theme='dark'] {
+    --bg-color:#181818;
+    --header-bg-color: #000000;
+    --container-bg-color: #57606f;
+    --text-color: #ced6e0;
+    --aside-bg-color:#0e0e0e;
+    --main-bg-color:#131212;
+    --span-color:#a53777;
+    --button-bg-color:#332870;
+    --button-click-bg-color:#252f5e;
+    --block-bg-color:#0e0e0e ;
+    --button--form-bg:linear-gradient(45deg,#af3e80, #9198e5);
+    --form-bg:#5a4155;
+}
