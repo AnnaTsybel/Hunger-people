@@ -1,0 +1,244 @@
+.section--about-us {
+    @include sections-info($text-color-on-light-bg, 23%, -20%, left)
+}
+
+.section--master-chef {
+    @include name;
+    @include sections-info($text-color-on-dark-bg, 23%, 70%, right);
+    background: no-repeat url(../images/dest/section2_bg.jpg);
+    background-size: cover;
+    padding: 6rem 0;
+}
+
+.section--book-a-table {
+    @include sections-info($text-color-on-light-bg, 20%, -20%, left);
+    padding: 10rem 0 2rem;
+    flex-wrap: wrap;
+    .section {
+        &__text {
+            padding: 6rem 9rem;
+        }
+        &__form {
+            margin: 3rem 0;
+            @include form-style(96%, 47%);
+        }
+        &__work-time {
+            width: 100%;
+            margin: 2rem 0;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+            color: #757575;
+            font-weight: 700;
+            span {
+                color: #585858;
+            }
+        }
+    }
+}
+
+.section--pancakes {
+    @include name;
+    @include sections-info($text-color-on-dark-bg, 23%, 70%, right);
+    background: no-repeat url(../images/dest/specialitys.jpg);
+    background-size: cover;
+    padding: 6rem 0;
+}
+
+.section--delicious-menu {
+    padding: 9.5rem 0;
+    @include headers_section();
+    @include text-description();
+    .section__description {
+        text-align: center;
+    }
+    .menu-categories {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            li {
+                position: relative;
+                button {
+                    background: none;
+                    outline: none;
+                    border: none;
+                    padding: 2rem 4.1rem;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    width: 0.5px;
+                    height: 90%;
+                    background-color: rgba(51, 51, 51, 0.2);
+                    ;
+                    top: 0;
+                    left: 0;
+                }
+                &:first-child::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .menu {
+        max-width: 128rem;
+        margin: 3.1rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        &__item {
+            font-family: 'Banny Round';
+            padding: 1.3rem 1rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            span {
+                display: block;
+                font-size: 1.2rem;
+                font-weight: normal;
+                text-transform: lowercase;
+            }
+        }
+    }
+}
+
+.section--galerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.section--contact {
+    padding: 10rem 0 8rem;
+    @include headers_section();
+    @include text-description();
+    .section {
+        &__description {
+            margin: 4rem auto 0;
+            max-width: 56.5rem;
+            text-align: center;
+        }
+        &__form-contact {
+            max-width: 90%;
+            margin: 3.5rem auto;
+            @include form-style( 50%, 32%);
+            textarea {
+                font-family: 'Open Sans';
+                margin: 1rem auto;
+                width: 98%;
+                resize: none;
+                border-radius: 0.5rem;
+                font-size: 1.4rem;
+                background: $input_bg;
+                border: none;
+                outline: none;
+                padding: 2rem;
+                height: 12rem;
+            }
+            &--inline {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0 1rem;
+            }
+            &__info {
+                text-align: left;
+                width: 50%;
+                a {
+                    color: #999999;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 1.2rem;
+                    line-height: 1.4rem;
+                    text-align: left;
+                    img {
+                        max-width: 1.8rem;
+                        max-height: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section--events {
+    background: no-repeat url(../images/dest/specialitys.jpg);
+    background-size: cover;
+    padding: 1rem 0;
+    @include name;
+    .section {
+        &__events-info {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        &__image--block {
+            width: 50%;
+            &--first {
+                padding: 0 4.3rem;
+                .section__image {
+                    @include images(23%, 75%, right);
+                }
+                .section__event-name {
+                    transform: rotate(90deg);
+                    flex-direction: end;
+                    right: -43%;
+                }
+            }
+            &--second {
+                padding: 0 5rem;
+                .section__image {
+                    @include images( 23%, -24%, left);
+                }
+                .section__event-name {
+                    transform: rotate(-90deg);
+                    flex-direction: start;
+                    left: -43%;
+                }
+            }
+        }
+        &__image {
+            .section__event-name {
+                top: 41.5%;
+                border-radius: 0.5rem 0.5rem 0 0;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                font-family: 'Banny Round';
+                p {
+                    color: $text-color-on-dark-bg;
+                    font-size: 2.4rem;
+                    line-height: 1.2rem;
+                    text-indent: 2rem;
+                    text-transform: uppercase;
+                }
+                background: $text-color-on-light-bg;
+                height: 8rem;
+                width: 101%;
+            }
+        }
+        &__call-back {
+            font-family: 'Banny Round';
+            margin: 4rem auto;
+            text-align: center;
+            color: $text-color-on-dark-bg;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.map {
+    border: 0;
+    width: 100%;
+    height: 47.5rem;
+}

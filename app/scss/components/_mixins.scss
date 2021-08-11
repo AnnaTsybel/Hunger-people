@@ -1,0 +1,145 @@
+/* BUTTONS */
+
+@mixin button($width, $bg-default, $bg-hover, $margin) {
+    text-align: center;
+    button {
+        padding: 20px;
+        color: white;
+        cursor: pointer;
+        background: $bg-default;
+        border: 1px solid white;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+        margin: $margin;
+        font-weight: bold;
+        width: $width;
+        height: 6rem;
+        text-transform: uppercase;
+    }
+    button:hover {
+        background-color: $bg-hover;
+        border: 1px solid $button-color;
+    }
+}
+
+
+/*FORM STYLE*/
+
+@mixin form-style($button-width, $input-width) {
+    input {
+        background: $input_bg;
+        padding: 20px;
+        width: $input-width;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1.4rem;
+        outline: none;
+        margin: 0.6rem;
+    }
+    @include button($button-width, $button-color, none, 0.5rem auto)
+}
+
+
+/* HEADERS IN SECTIONS*/
+
+@mixin headers_section {
+    .section__header {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3.6rem;
+        font-family: 'Banny Round';
+        position: relative;
+        &:after {
+            content: " ";
+            position: absolute;
+            top: 100%;
+            right: 45%;
+            width: 6rem;
+            height: 0.5rem;
+            margin: 1rem 0;
+            background-color: $line-color;
+        }
+    }
+}
+
+@mixin text-description {
+    .section__description {
+        margin: 3rem 0 2rem;
+        line-height: 2.8rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+}
+
+
+/* SECTIONS  */
+
+@mixin sections-info($text-color, $square_top, $square_right, $float_side) {
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: row;
+    color: $text-color;
+    flex-wrap: wrap;
+    .section__text {
+        padding: 11rem 9rem;
+        text-align: center;
+        width: 53.5%;
+        @include headers_section();
+        @include text-description();
+        .section__about {
+            line-height: 2.4rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+    }
+    .section__image--block {
+        width: 46.5%;
+    }
+    .section__image {
+        @include images($square_top, $square_right, $float_side);
+    }
+}
+
+
+/* IMAGES SECTIONS*/
+
+@mixin images($square_top, $square_right, $float_side) {
+    max-width: 47.5rem;
+    max-height: 47.5rem;
+    position: relative;
+    float: $float_side;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 54px 6px rgba(34, 60, 80, 0.73);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    &:after {
+        content: ' ';
+        position: absolute;
+        width: 21rem;
+        height: 21rem;
+        border: 2rem solid $square-color;
+        top: $square_top;
+        right: $square_right;
+        border-radius: 0.5rem;
+    }
+}
+
+
+/* NAME OF SECTIONS  */
+
+@mixin name {
+    .section__name {
+        width: 100%;
+        margin: 0 auto 4rem;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color: $text-color-on-light-bg;
+        text-align: center;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+    }
+}

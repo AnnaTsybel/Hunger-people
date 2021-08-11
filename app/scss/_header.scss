@@ -1,136 +1,109 @@
-@import 'themes';
-.header{
-    padding:20px 40px;
-    max-height: 70px;
-    background: var(--header-bg-color);
-    display: flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items: center;
-    &__button_change{
-
-    }
-    &__navigation{
-       
+.header {
+    background: no-repeat url(../images/dest/header_bg.jpg);
+    background-size: cover;
+    color: $text-color-on-dark-bg;
+    text-transform: uppercase;
+    padding: 2.5rem 8rem 9.3rem;
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: top;
         ul {
-            font-size: 0;
             display: flex;
+            flex-direction: row;
+            justify-content: center;
             li {
-                position: relative;
+                padding: 1.2rem 4.9rem;
                 a {
-                    font-size: 20px;
-                    z-index: 4;
-                    position: relative;
-                    width: 100px;
-                    height: 40px;
-                    display: block;
-                    color:  var(--span-color);
-                    line-height: 40px;
-                    text-align: center;
-                    text-decoration: none;
-                    transition: .5s;
-                    box-sizing: border-box;
-                    span {
-                        position: absolute;
-                        width: 25%;
-                        height: 100%;
-                        background-color: var(--span-color);
-                        z-index: -1;
-                        transform-origin: top;
-                        transform: scaleY(0);
-                        transition: transform .5s;
+                    color: $text-color-on-dark-bg;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    &:hover {
+                        border-bottom: 1px solid $line-color;
+                        transition: transform 2s;
                     }
-                    
-                   
-                }
-                a:hover {
-                    color: #fff;
-                    text-decoration: none;
-                }
-                a:hover span {
-                    transform-origin: bottom;
-                    transform: scaleY(1);
-                }
-                a span:nth-child(1) {
-                    left: 0;
-                    transition-delay: 0s;
-                }
-                a span:nth-child(2) {
-                    left: 25%;
-                    transition-delay: 0.15s;
-                }
-                a span:nth-child(3) {
-                    left: 50%;
-                    transition-delay: 0.3s;
-                }
-                a span:nth-child(4) {
-                    left: 75%;
-                    transition-delay: 0.45s;
                 }
             }
         }
-      
-        .bg-checkbox-wrap * {
-            box-sizing: content-box;
-        }	
-        .bg-checkbox-wrap {
-            display: flex;
-            justify-content: center;
-        }
-        #bg-checkbox {
-            display: none;
-        }
-        #bg-checkbox-button {
-            position: relative;
-            display: block;
-            width: 225px;
-            height: 94px;
-            background-color: #337AB7;
-            border-radius: 87px;
-            cursor: pointer;
-            transition: 0.4s ease background-color;  
-            border: 4px solid #BFE2FF;
-        }
-        #bg-checkbox-button #knob {
-            width: 72px;
-            height: 72px;
-            background-image: url('http://images.vfl.ru/ii/1575406053/e9154da5/28793388.jpg');
-            background-size: 225px;
-            position: relative;
-            top: 7px;
-            left: 7px;
-            border-radius: 50%;
-            transition: 0.4s ease left, 0.4s ease background-position;
-            z-index: 2;
-            border: 4px solid #BFE2FF;
-        }
-        #bg-checkbox-button #not-ok,
-        #bg-checkbox-button #ok {
+    }
+    &__logo {
+        width: 150px;
+        height: 150px;
+    }
+    &__buttons {
+        @include button(200px, none, $button_color, 3.6rem 1.8rem);
+    }
+    &__page-name {
+        padding: 15px;
+        font-size: 96px;
+        font-family: 'Banny Round';
+        text-align: center;
+        position: relative;
+        width: 100%;
+        &:after {
+            content: " ";
             position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #fff;
-            font-size: 13px;
-            font-weight: bold;
-            font-family: Verdana, sans-serif;
-            text-transform: uppercase;
-            margin-left: 102px;
-            z-index: 1;
-            transition: 0.4s ease opacity;   
+            top: 100%;
+            right: 47%;
+            width: 6rem;
+            height: 0.5rem;
+            border-radius: 0.2rem;
+            background-color: $line-color;
         }
-        #bg-checkbox-button #ok {
-            margin-left: 30px;
-            opacity: 0;
+    }
+    &__page-about {
+        font-weight: bold;
+        letter-spacing: 0.5em;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    &__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 14rem 0 3rem;
+        &--left,
+        &--right {
+            width: 10%;
         }
-        #bg-checkbox:checked + #bg-checkbox-button #ok {
-            opacity: 1;
+        &--left {
+            margin: 0;
+            position: relative;
+            p {
+                position: absolute;
+                transform: rotate(270deg);
+                top: 33%;
+                left: -110%;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 12px;
+                text-transform: none;
+                width: 30rem;
+            }
         }
-        #bg-checkbox:checked + #bg-checkbox-button #not-ok {
-            opacity: 0;
+        &--centered {
+            width: 80%;
         }
-        #bg-checkbox:checked + #bg-checkbox-button #knob {
-            left: 138px;
-            background-position: -125px 0;
+        &--right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            img {
+                width: 6rem;
+                height: 6rem;
+                margin: 10px 0;
+            }
         }
-}
+    }
+    &__scroll {
+        display: block;
+        text-align: center;
+        img {
+            width: 6rem;
+            height: 6rem;
+        }
+    }
 }

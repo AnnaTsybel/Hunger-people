@@ -2,159 +2,239 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/app.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.min.css">
 
 </head>
 
 <body>
-	<div class="wrapper">
-		<header>
-			<div class="container">
-				<div class="header">
-					<nav class="header__navigation">
-						<ul>
-							<li>
-								<a href="index.html">Home
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</a>
-							</li>
-							<li>
-								<a href="about.html">About
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</a>
-							</li>
-							<li>
-								<a href="#">Service
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</a>
-							</li>
-							<li>
-								<a href="contact.html">Contact
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-					<form class="search__form">
-						<input type="search" value="" placeholder="Search" class="search-input">
-						<button type="submit" class="search-button"><img src="images/dest/search.png"></button>
-					</form>
-					<div class="header__button_change">
-						<input type="button" value="Toggle" id="toggle-theme" />
-					</div>
-				</div>
-			</div>
-		</header>
-		<div class="main_content">
-			<div class="container">
-				<div class="main__content">
-					<aside class="aside">
-						<div class="aside__background__photo">
-							<img src="images/dest/mountain.jpg">
-						</div>
-						<div class="sidebar__content">
 
-							<img src="images/dest/photo_me.jpg" class="profile__photo">
-							<div class="profile__name">
-								<h1>Anna Tsybel</h1>
-							</div>
-							<div class="profile__prof">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-							</div>
-							<div class="profile__description">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et mauris mattis,
-									lacinia est a, eleifend nisi. Donec id finibus dui. Maecenas id cursus nisi. Aliquam
-									erat volutpat. Proin molestie ullamcorper lorem, rhoncus dignissim leo ornare ac.
-									Etiam dolor risus, consequat vitae consectetur vel, efficitur id nisi. Integer
-									eleifend elit quis interdum elementum. Cras accumsan mi eu orci pharetra interdum.
-								</p>
-							</div>
-							<div class="profile__socials">
-								<a href="#"><img src="images/dest/instagram.png"></a>
-								<a href="#"><img src="images/dest/instagram.png"></a>
-								<a href="#"><img src="images/dest/instagram.png"></a>
-							</div>
-							<div class="button__response">
-								<button onclick="buttonPopup()"> Напишите мне!</button>
-								<div class="b-popup">
-									<div class="b-popup-content">
-										Text in Popup
-									</div>
-								</div>
-							</div>
+    <header class="header">
+        <nav class="header__navigation">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#team">team</a></li>
+                <li><a href="#booking">booking</a></li>
+            </ul>
+            <a href="/">
+                <img class="header__logo" src="images/dest/logo.png" alt="hungry-people logo">
+            </a>
+            <ul>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#galerie">galerie</a></li>
+                <li><a href="#events">events</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
 
-						</div>
+        </nav>
+        <div class="header__info">
+            <div class="header__info--left">
+                <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+            </div>
+            <div class="header__info--centered">
+                <p class="header__page-about">restaurant</p>
+                <h1 class="header__page-name">Hungry people</h1>
+                <div class="header__buttons">
+                    <button>Book Table</button>
+                    <button>Explore</button>
+                </div>
+            </div>
+            <div class="header__info--right">
+                <a href="#"><img src="images/dest/icons/facebook.svg" alt="facebook link"></a>
+                <a href="#"><img src="images/dest/icons/twitter.svg" alt="twitter link"></a>
+                <a href="#"><img src="images/dest/icons/instagram.svg" alt="instagram link"></a>
 
 
-					</aside>
+            </div>
+        </div>
+        <a href="#footer" class="header__scroll">
+            <img src="images/dest/icons/scroll.svg" alt="scroll button">
+        </a>
+    </header>
+    <main>
+        <section id="about" class="section--about-us">
+            <div class="section__text">
+                <h2 class="section__header">about us</h2>
+                <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. </p>
+                <p class="section__about"> Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                    pharetra. Nulla facilisis semper laoreet.</p>
+            </div>
+            <div class="section__image--block">
+                <div class="section__image">
+                    <img src="images/dest/bonfire.jpg" alt="bonfire">
+                </div>
+            </div>
+
+        </section>
+        <section id="team" class="section--master-chef">
+            <h2 class="section__name">OUR TEAM</h2>
+            <div class="section__image--block">
+                <div class="section__image">
+                    <img src="images/dest/woman-cook.jpg" alt="woman cook">
+                </div>
+            </div>
+
+            <div class="section__text">
+                <h2 class="section__header">master chef</h2>
+                <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. </p>
+                <p class="section__about"> Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                    pharetra. Nulla facilisis semper laoreet.</p>
+            </div>
+        </section>
+        <section id="booking" class="section--book-a-table">
+            <div class="section__text">
+                <h2 class="section__header">book a table</h2>
+                <form action="#" class="section__form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="tel" placeholder="Phone">
+                    <input type="text" placeholder="People">
+                    <input type="text" placeholder="Date (mm/dd)">
+                    <input type="text" placeholder="Time">
+
+                    <button>BOOK NOW</button>
+                </form>
+            </div>
+            <div class="section__image--block">
+                <div class="section__image">
+                    <img src="images/dest/clock.jpg" alt="clock">
+                </div>
+            </div>
+
+            <div class="section__work-time">
+                <p>Mon - Fri: <span>8PM - 10PM</span>, Sat - Sun:<span>8PM - 3AM</span> , Phone: <span>+40 729 131 637/+40 726 458 782</span></p>
+            </div>
+        </section>
+        <section class="section--pancakes">
+            <h2 class="section__name">specialties</h2>
+            <div class="section__image--block">
+                <div class="section__image">
+                    <img src="images/dest/delicios-dish.jpg" alt="delicios dish">
+
+                </div>
+            </div>
+            <div class="section__text">
+                <h2 class="section__header">chocolate pancakes</h2>
+                <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. </p>
+                <p class="section__about"> Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                    pharetra. Nulla facilisis semper laoreet.</p>
+            </div>
+        </section>
+        <section id="menu" class="section--delicious-menu">
+            <h2 class="section__header">DELICIOUS MENU</h2>
+            <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. </p>
+            <div class="menu-categories">
+                <ul>
+                    <li><button id='soupe'>SOUPE</button></li>
+                    <li><button id='pizza'>PIZZA</button></li>
+                    <li><button id='pasta'>PASTA</button></li>
+                    <li><button id='desert'>DESERT</button></li>
+                    <li><button id='wine'>WINE</button></li>
+                    <li><button id='beer'>BEER</button></li>
+                    <li><button id='drinks'>DRINKS</button></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <div class="menu__item">
+                    <p>PIZZA QUATRO STAGIONI . . . . 55,68 USD <span>Integer ullamcorper neque eu purus euismod</span></p>
+                </div>
+                <div class="menu__item">
+                    <p>PIZZA QUATRO STAGIONI . . . . 55,68 USD <span>Integer ullamcorper neque eu purus euismod</span></p>
+                </div>
+                <div class="menu__item">
+                    <p>PIZZA QUATRO STAGIONI . . . . 55,68 USD <span>Integer ullamcorper neque eu purus euismod</span></p>
+                </div>
+                <div class="menu__item">
+                    <p>PIZZA QUATRO STAGIONI . . . . 55,68 USD <span>Integer ullamcorper neque eu purus euismod</span></p>
+                </div>
+                <div class="menu__item">
+                    <p>PIZZA QUATRO STAGIONI . . . . 55,68 USD <span>Integer ullamcorper neque eu purus euismod</span></p>
+                </div>
+                <div class="menu__item">
+                    <p>PIZZA QUATRO STAGIONI . . . . 55,68 USD<span> Integer ullamcorper neque eu purus euismod</span></p>
+                </div>
+                <div class="menu__item">
+                    <p>PIZZA QUATRO STAGIONI . . . . 55,68 USD <span>Integer ullamcorper neque eu purus euismod</span></p>
+                </div>
+                <div class="menu__item">
+                    <p>PIZZA QUATRO STAGIONI . . . . 55,68 USD <span>Integer ullamcorper neque eu purus euismod</span></p>
+                </div>
+                <div class="menu__item">
+                    <p>PIZZA QUATRO STAGIONI . . . . 55,68 USD <span>Integer ullamcorper neque eu purus euismod</span></p>
+                </div>
+                <div class="menu__item">
+                    <p>PIZZA QUATRO STAGIONI . . . . 55,68 USD <span>Integer ullamcorper neque eu purus euismod</span></p>
+                </div>
+                <div class="menu__item">
+                    <p>PIZZA QUATRO STAGIONI . . . . 55,68 USD <span>Integer ullamcorper neque eu purus euismod</span></p>
+                </div>
+                <div class="menu__item">
+                    <p>PIZZA QUATRO STAGIONI . . . . 55,68 USD <span>Integer ullamcorper neque eu purus euismod</span></p>
+                </div>
+            </div>
+        </section>
+        <section id="events" class="section--events">
+            <h2 class="section__name">private events</h2>
+            <div class="section__events-info">
+                <div class="section__image--block section__image--block--first">
+                    <div class="section__image">
+                        <img src="images/dest/ring.png" alt="wedding ring">
+                        <div class="section__event-name">
+                            <p>weddings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__image--block section__image--block--second">
+                    <div class="section__image">
+                        <img src="images/dest/table.png" alt="wedding table">
+                        <div class="section__event-name">
+                            <p>corporate parties</p>
+                        </div>
+                    </div>
+                </div>
 
 
-					<main class="main">
+            </div>
+            <p class="section__call-back">For private events please call:<span>+40 729 131 637/+40 726 458 782</span> or use the contact form.</p>
+        </section>
+        <section id="galerie" class="section--galerie">
+            <img src="images/dest/galerie-photo1.jpg" alt="galerie photo 1">
+            <img src="images/dest/galerie-photo2.jpg" alt="galerie photo 2">
+            <img src="images/dest/galerie-photo3.jpg" alt="galerie photo 3">
+            <img src="images/dest/galerie-photo4.jpg" alt="galerie photo 4">
+        </section>
+        <section id="contact" class="section--contact">
+            <h2 class="section__header">Contact</h2>
+            <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. </p>
+            <form action="#" class="section__form-contact">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Phone">
+                <textarea placeholder="Message"></textarea>
+                <div class="section__form-contact--inline">
+                    <div class="section__form-contact__info">
+                        <a href="#"><img src="images/dest/icons/mail.png" alt="mail icon"> 5th London Boulevard, U.K.</a>
+                        <a href="#"><img src="images/dest/icons/location.png" alt="location icon"> +40 729 131 637/+40 726 458 782</a>
+                        <a href="#"><img src="images/dest/icons/phone.png" alt="phone icon"> office@mindblister.com </a>
+                    </div>
+                    <button>Send Message</button>
+                </div>
+            </form>
+        </section>
 
-						<div class="slider">
-							<div class="slider-wrapper">
-								<div class="slider-container">
-									<div class="slider-track">
-										<div class="slider-item">
-											<img src="images/dest/slider_mountain.jpg">
-										</div>
-										<div class="slider-item">
-											<img src="images/dest/slider_mountain1.jpg">
-										</div>
-										<div class="slider-item">
-											<img src="images/dest/slider_mountain2.jpg">
-										</div>
-										<div class="slider-item">
-											<img src="images/dest/slider_mountain3.jpg">
-										</div>
-									</div>
-									<button class='prev'><img src="images/dest/left.png"></button>
-									<button class='next'><img src="images/dest/right.png"></button>
-								</div>
-							</div>
-						</div>
-						<div class="block__text">
-							<form class="form__text">
-								<input placeholder="Напишите что-нибудь" class="input__text" >
-								<input type="image" alt="Текст">
-								<button></button>
-							</form>
-						</div>
-					</main>
-				</div>
-			</div>
-		</div>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-items">
-					<div class="logo">
-						<img src="images/dest/instagram.png">
-					</div>
-					<div class="contacts">
-						<p>Телефон:<a href="#">0970848883</a></p>
-						<p>Телефон:<a href="#">0970848883</a></p>
-					</div>
-				</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script src="js/app.min.js"></script>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57571179.24096544!2d50.019799199999994!3d28.27208215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f7bf7ed7186597!2s4%20Hungry%20People!5e0!3m2!1sru!2sua!4v1628475524338!5m2!1sru!2sua"
+            allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </main>
+
+
+    <footer id='footer' class="footer">
+        <p class="footer__information"> &#169; Copyright <span>Mindblister</span> 2019</p>
+    </footer>
+
+    <script src="js/app.min.js"></script>
 </body>
 
 </html>
