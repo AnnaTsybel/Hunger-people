@@ -1,3 +1,4 @@
+//parent class for menu items
 class Menulist {
     constructor(options) {
         this.name = options.name;
@@ -12,6 +13,7 @@ class Menulist {
     }
 }
 
+//wines
 let wine = [{
         name: 'wine',
         price: '55.14',
@@ -35,6 +37,8 @@ let wine = [{
     }
 
 ]
+
+//pastas
 let pasta = [{
         name: 'pasta',
         price: '55.14',
@@ -58,6 +62,8 @@ let pasta = [{
     }
 
 ]
+
+//deserts
 let desert = [{
         name: 'desert',
         price: '55.14',
@@ -81,6 +87,8 @@ let desert = [{
     }
 
 ]
+
+//beers
 let beer = [{
         name: 'beer',
         price: '55.14',
@@ -104,6 +112,8 @@ let beer = [{
     }
 
 ]
+
+//drinks
 let drinks = [{
         name: 'drinks',
         price: '55.14',
@@ -143,6 +153,8 @@ let drinks = [{
     }
 
 ]
+
+//pizzas
 let pizza = [{
         name: 'pizza',
         price: '55.14',
@@ -166,6 +178,8 @@ let pizza = [{
     }
 
 ]
+
+//soupes
 let soupe = [{
         name: 'soupe',
         price: '55.14',
